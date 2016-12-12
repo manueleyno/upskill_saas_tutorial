@@ -34,6 +34,9 @@ gem 'bootstrap-sass', '3.3.7'
 # Use Font Awesome sass gem for adding icons
 gem 'font-awesome-sass', '4.6.2'
 
+# Use Hirb gem for better console data presentation
+gem 'hirb', '0.7.3'
+
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
@@ -48,7 +51,7 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '2.0.0'
-end
+end @
 
 group :production do
   # Use the PostgreSQL gem for Heroku production servers
