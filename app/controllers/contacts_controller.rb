@@ -1,6 +1,6 @@
 class ContactsController < ApplicationController
   def new
-    @contact = Contact.new
+    @contact = Contact.new #großes C bei contact weil es danach im modell file sucht contact.rb
   end
   
   def create
