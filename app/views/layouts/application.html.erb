@@ -32,6 +32,11 @@
       </div>
     </nav>
     
+    <div class="container">
+      <% flash.each do |type, msg| %>
+      <%=content_tag :div, msg, class: "alert alert-#{type}" %>
+      <% end %>
+    </div>
     <%= yield %> <!Grund für jede seite die ganze datei und yield holt den rest der view files>
 
   </body>
