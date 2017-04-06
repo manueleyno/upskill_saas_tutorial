@@ -26,16 +26,9 @@ h1, h2, h3 {
 
 //Background Gradient
 .navbar, .home-callout {
-    /*Gradient provided by @_ighosh uigradiant.com*/
-    background: #085078; /* fallback for old browsers */
-    // background: -webkit-linear-gradient(to left, #085078 , #85D8CE); /* Chrome 10-25, Safari 5.1-6 */
-    // background: linear-gradient(to left, #085078 , #85D8CE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b4ddb4+0,83c783+0,52b152+19,008a00+100,216400+100&0.97+13,0.95+100 */
-    background: -moz-linear-gradient(left,  rgba(131,199,131,0.97) 0%, rgba(97,184,97,0.97) 13%, rgba(82,177,82,0.97) 19%, rgba(33,100,0,0.95) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left,  rgba(131,199,131,0.97) 0%,rgba(97,184,97,0.97) 13%,rgba(82,177,82,0.97) 19%,rgba(33,100,0,0.95) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right,  rgba(131,199,131,0.97) 0%,rgba(97,184,97,0.97) 13%,rgba(82,177,82,0.97) 19%,rgba(33,100,0,0.95) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f783c783', endColorstr='#f2216400',GradientType=1 ); /* IE6-9 */
-
+    background: #F3904F; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #F3904F , #3B4371); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #F3904F , #3B4371); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 //Nav Styles
@@ -63,23 +56,165 @@ h1, h2, h3 {
 
 .navbar-default .navbar-toggle {
     border: 2px solid white;
+    float: right;
     &:hover, &:focus {
-       background-color: #085078; 
+       background-color: #F3904F; 
     }
+}
+
+.nav_login {
+    margin-left: 20px;
+}
+
+.dropdown-menu {
+    opacity: 100%;
+    background-color: none;
+}
+
+//Header
+
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
+.navbar-header {
+    margin-top: 10px;
+}
+
+//Logo
+
+.logo {
+    padding: 10px;
+    float: left;
+}
+
+.logo2 {
+    margin-right: 50px;
 }
     
 //Homepage Styles
 .home-callout {
     color: white;
-    margin-top: -20px;
     padding-top: 50px;
     padding-bottom: 100px;
 }
 
-.alert-notice {
-    display: none;
+
+.flash-container {
+  position: absolute;
+  width: 100%;
 }
 
-.home-signup-links{
+//devise greift darauf zurück
+.alert-notice, .alert-alert {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+  margin-top: -14px;
+}
+
+.home-grid{
+    margin-top: 50px;
+}
+
+//Inhalt
+
+.grund {
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+
+//Footer
+
+footer {
+    background-color:  #f0e6ff;
+}
+
+.footer_all {
     margin-top: 30px;
 }
+
+.fb_footer {
+    margin-bottom: 30px;
+}
+
+.footer_logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+
+.footer_under_logo {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+
+
+/* ----------------------------------------------------------------
+	Columns & Grids
+-----------------------------------------------------------------*/
+
+
+.postcontent { width: 860px; }
+.postcontent.bothsidebar { width: 580px; }
+.sidebar { width: 240px; }
+.col_full { width: 100%; }
+.col_half { width: 48%; }
+.col_one_third { width: 30.63%; }
+.col_two_third { width: 65.33%; }
+.col_one_fourth { width: 22%; }
+.col_three_fourth { width: 74%; }
+.col_one_fifth { width: 16.8%; }
+.col_two_fifth { width: 37.6%; }
+.col_three_fifth { width: 58.4%; }
+.col_four_fifth { width: 79.2%; }
+.col_one_sixth { width: 13.33%; }
+.col_five_sixth { width: 82.67%; }
+body.stretched .container-fullwidth {
+	position: relative;
+	padding: 0 60px;
+	width: 100%;
+}
+
+.postcontent,
+.sidebar,
+.col_full,
+.col_half,
+.col_one_third,
+.col_two_third,
+.col_three_fourth,
+.col_one_fourth,
+.col_one_fifth,
+.col_two_fifth,
+.col_three_fifth,
+.col_four_fifth,
+.col_one_sixth,
+.col_five_sixth {
+	display: block;
+	position: relative;
+	margin-right: 4%;
+	margin-bottom: 50px;
+	float: left;
+}
+
+.postcontent,
+.sidebar { margin-right: 40px; }
+
+.col_full {
+	clear: both;
+	float: none;
+	margin-right: 0;
+}
+
+.postcontent.col_last,
+.sidebar.col_last { float: right; }
+
+.col_last {
+	margin-right: 0 !important;
+	clear: right;
+}
+
